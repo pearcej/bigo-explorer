@@ -54,6 +54,7 @@ int loopincrementn(int n) {
 	int add = 2;
 	for (int i = s; i < n; i=i+add) {
 		count++; // # this line executes
+		cout << count << endl;
 	}
 	return (count);
 }

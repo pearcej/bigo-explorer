@@ -44,21 +44,6 @@ int loopn(int n) {
 	return (count);
 	}
 
-int loopincrementn(int n) {
-	/* demonstrates O(n) behavior
-	pre:  n is a positive integer
-	post: returns count # iterations */
-
-	int count = 0;
-	int s = 10;
-	int add = 2;
-	for (int i = s; i < n; i=i+add) {
-		count++; // # this line executes
-		cout << count << endl;
-	}
-	return (count);
-}
-
 int sequential(int n) {
 	/* demonstrates O(n) behavior
 	pre: n is positive integer
@@ -143,6 +128,21 @@ int halving(int n) {
 	return (count);
 }
 
+int loopincrementn(int n) {
+	/* demonstrates O(n) behavior
+	pre:  n is a positive integer
+	post: returns count # iterations */
+
+	int count = 0;
+	int s = 10;
+	int add = 2;
+	for (int i = s; i < n; i=i+add) {
+		count++; // # this line executes
+		cout << count << endl;
+	}
+	return (count);
+}
+
 int main() {
 	int n;
 	cout << "Please enter n: ";
@@ -154,13 +154,13 @@ int main() {
 		cout << "\tlooponconstant1(" << n << ") = " << looponconstant1(n) << endl;
 		cout << "\tlooponconstant4(" << n << ") = " << looponconstant4(n) << endl;
 		cout << "\tloopn(" << n << ") = " << loopn(n) << endl;
-		cout << "\tloopincrementn(" << n << ") = " << loopincrementn(n) << endl;
 		cout << "\tsequential(" << n << ") = " << sequential(n) << endl;
 		cout << "\tnestedconstant(" << n << ") = " << nestedconstant(n) << endl;
 		cout << "\ttwonested(" << n << ") = " << twonested(n) << endl;
 		cout << "\tthreenested(" << n << ") = " << threenested(n) << endl;
 		cout << "\tpowern(" << n << ") = " << powern(n) << endl;
 		cout << "\thalving(" << n << ") = " << halving(n) << "\n" << endl;
+		cout << "\tloopincrementn(" << n << ") = " << loopincrementn(n) << endl;
 
 		cout << "Please enter another n: ";
 		cin >> n;

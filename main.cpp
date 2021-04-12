@@ -145,7 +145,7 @@ int loopincrementn(int n) {
 
 int main() {
 	int n;
-	cout << "Please enter n: ";
+	cout << "\nPlease enter n: ";
 	cin >> n;
 
 	while (n > 0) {
@@ -160,10 +160,10 @@ int main() {
 		cout << "\tthreenested(" << n << ") = " << threenested(n) << endl;
 		cout << "\tpowern(" << n << ") = " << powern(n) << endl;
 		cout << "\thalving(" << n << ") = " << halving(n) << endl;
-		cout << "\tloopincrementn(" << n << ") = " << loopincrementn(n) << "\n" << endl;
+		cout << "\tloopincrementn(" << n << ") = " << loopincrementn(n) << endl;
 
-		cout << "Please enter another n: ";
+		cout << "\nPlease enter another n: ";
 		cin >> n;
-	}
+	}\
 	return 0;
 }
